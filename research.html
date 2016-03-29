@@ -30,14 +30,18 @@
     <div class="outer">
       <div class="inner">
         <h3> Android Network measurement </h3>
-    <p>This project measures the latency and bandwidth on Android networks. </p>
-    </div>
-    <hr>
+    <p>This project measures the latency and bandwidth on Android networks. The latency and bandwidth of any remote server is measured by first mile and second segment connection. First mile measurement is implemented as an Android app that sends ICMP packet to the closes DNS server based on its geo-location. Latency is measured as the interval between packet trains. </p>
+    <a href="https://play.google.com/store/apps/details?id=com.zjulist.video"> First mile app can be downloaded here </a>
+    <p> Second Segment measurements focuses on the latency from the DNS server to the requested destination. It is also done by sending ICMP packets and compute the interval between the request packets and the response packets. The bottleneck here is that we do not have control over the DNS server and cannot send packet from there. We bypassed this problem by setting CDN servers from all over the world and send requests from one of the most closest CDN server based on their geo-locations. The results turned to be accurate by our testes on Alexa top 100 websites.</p>
+
+     </div>
+     <hr>
+
     
      <div class="outer">
       <div class="inner">
         <h3> Aarogya </h3>
-    <p>Implemented an Android app that facilitates users on their health related search. Designed user-friendly interface for Indian people to search for near-by hospitals for specific diseases. Implemented an interface for health organizations to analyse user search history based on their geo-location. Implemented a framework to recommend health insurance plans based on user's search history. </p>
+    <p>I implemented an Android app that facilitates users on their health related search. Designed user-friendly interface for Indian people to search for near-by hospitals for specific diseases. Implemented an interface for health organizations to analyse user search history based on their geo-location. Implemented a framework to recommend health insurance plans based on user's search history. </p>
     <a href="https://play.google.com/store/apps/details?id=com.yanghu"> App can be downloaded here </a>
     </div>
     <hr>
